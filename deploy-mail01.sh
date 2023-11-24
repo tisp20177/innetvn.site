@@ -46,9 +46,9 @@ mv mailcow-dockerized service && cd service
 ./generate_config.sh
 
 sudo sed -i 's/HTTP_PORT=80/HTTP_PORT=8080/' /root/service/mailcow.conf
-sudo sed -i 's/HTTP_BIND=/HTTP_BIND=127.0.0.1/' /root/service/mailcow.conf
+sudo sed -i 's/HTTP_BIND=/HTTP_BIND=192.168.1.82/' /root/service/mailcow.conf
 sudo sed -i 's/HTTPS_PORT=443/HTTPS_PORT=8443/' /root/service/mailcow.conf
-sudo sed -i 's/HTTPS_BIND=/HTTPS_BIND=127.0.0.1/' /root/service/mailcow.conf
+sudo sed -i 's/HTTPS_BIND=/HTTPS_BIND=192.168.1.82/' /root/service/mailcow.conf
 sudo sed -i 's/DOCKER_COMPOSE_VERSION=native/DOCKER_COMPOSE_VERSION=2/' /root/service/mailcow.conf
 sudo sed -i 's/SKIP_LETS_ENCRYPT=n/SKIP_LETS_ENCRYPT=y/' /root/service/mailcow.conf
 
@@ -60,5 +60,5 @@ sudo sed -i 's/SKIP_LETS_ENCRYPT=n/SKIP_LETS_ENCRYPT=y/' /root/service/mailcow.c
 #SKIP_LETS_ENCRYPT=y
 
 docker compose pull
-docker compose up -d
+#docker compose up -d
 
