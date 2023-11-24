@@ -58,6 +58,7 @@ sudo sed -i 's/SKIP_LETS_ENCRYPT=n/SKIP_LETS_ENCRYPT=y/' /root/service/mailcow.c
 #HTTPS_BIND=192.168.1.82
 #DOCKER_COMPOSE_VERSION=2
 #SKIP_LETS_ENCRYPT=y
+##### SKIP_CLAMD=n , USE_WATCHDOG=y
 
 docker compose pull
 #docker compose up -d
