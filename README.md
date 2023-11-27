@@ -1,6 +1,6 @@
 # innetvn.site
 my demo
-Just copy no code
+Just copy not edit
 
 for ad
 https://github.com/diegogslomp/samba-ad-dc
